@@ -7,7 +7,7 @@ app.get('/ping', (req, res) => {
     res.send('pong');
 });
 
-app.get('/image', (req, res) => {
+app.get('/name-tag', (req, res) => {
     res.send(`this is an image test`);
 })
 
