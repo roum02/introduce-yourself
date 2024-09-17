@@ -8,7 +8,10 @@ app.get('/ping', (req, res) => {
 });
 
 app.get('/name-tag', (req, res) => {
-    res.send(`this is an image test`);
+    res.send(`
+    <svg xmlns="http://www.w3.org/2000/svg">
+    <rect width="500" height="300"></rect>
+    </svg>`);
 })
 
 app.listen(port, () => {
