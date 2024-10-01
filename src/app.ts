@@ -1,4 +1,5 @@
 import express, { Request, Response, Application } from 'express';
+import {renderModel} from "./model";
 
 
 const app: Application = express();
@@ -12,11 +13,7 @@ app.get('/name-tag', (req: Request, res: Response) => {
     res.send(`
     <svg xmlns="http://www.w3.org/2000/svg">
         <rect width="500" height="300" fill="#3d87fb"></rect>
-        <text 
-        x="30" y="90" 
-        fill="#ED6E46" font-size="100" font-family="'Leckerli One', cursive">
-        hello
-        </text>
+        ${renderModel.text.render}
     </svg>`);
 });
 
