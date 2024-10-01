@@ -1,3 +1,7 @@
 node_modules/
 .idea
 *.iml
+
+# Ignore files for PNPM, NPM
+pnpm-lock.yaml
+package.json
