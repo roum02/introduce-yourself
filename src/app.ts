@@ -13,7 +13,7 @@ app.get('/name-tag', (req: Request, res: Response) => {
     res.send(`
     <svg xmlns="http://www.w3.org/2000/svg">
         <rect width="500" height="300" fill="#3d87fb"></rect>
-        ${renderModel.text.render}
+        ${renderModel.text.render()}
     </svg>`);
 });
 
